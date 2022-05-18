@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>To do list</title>
+</head>
+<body>
+
+    <script src="script.js">
+       //none 
+       //const ul = document.querySelector('.myUl');
+      //  ul.addEventListener('click', function(e) {
+      //  this.removeChild(e.target);
+  // })
+
+            /*function deleteIl(){
+                let menu = document.getElementById('myUl');
+               while (menu.firstChild) {
+                   menu.removeChild(menu.firstChild);
+                   
+            }}*/
+          //let menu = document.getElementById('myUl');
+          //  menu.innerHTML = 'thid fuck';    
+    </script> 
+    
+    <div class="theHeader">
+        <h2>TO-DO LIST</h2>
+        <input type="text" id="tasks"  class="List" placeholder="Task">
+        <input type="submit" id="subButton" onclick="action()">
+        <button type="button" id='resetBut' onclick="removeAll()">Reset </button>
+        <div>
+
+       <div class="theList">
+            <ol id="myUl" ></ol>
+     </div>
+</body>
+</html>
