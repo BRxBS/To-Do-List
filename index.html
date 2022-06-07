@@ -28,13 +28,18 @@
     
     <div class="theHeader">
         <h2>TO-DO LIST</h2>
-        <input type="text" id="tasks"  class="List" placeholder="Task">
-        <input type="submit" id="subButton" onclick="action()">
-        <button type="button" id='resetBut' onclick="removeAll()">Reset </button>
-        <div>
+        <div class="innerDiv">
+            <input type="text" id="tasks"  class="List" placeholder="Task">
+            <input type="submit" id="subButton" onclick="action()" value="Add">
+            <button type="button" id='resetBut' onclick="removeAll()">Reset </button>
+            <div>
+    
+           <div class="theList">
+                <ol id="myUl" >
+                  
+                </ol>
+         </div>
 
-       <div class="theList">
-            <ol id="myUl" ></ol>
-     </div>
+        </div>
 </body>
 </html>

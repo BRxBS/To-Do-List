@@ -6,16 +6,27 @@ function action() {
     item.appendChild(t);
 
         if(inputValue === ''){
-            alert("you must write something!");
+            document.getElementById('tasks').value= '';
         }
         else{
+            const promessa = new Promise (function(resolve){
+                setTimeout(()=>{
+                     resolve('ok')
+                },5000)
+            })
+            
+            async function start(){
+                const result = await promessa
+                console.log(result)}
+
             document.getElementById('myUl').appendChild(item);
+            start()
         }
         document.getElementById('tasks').value= '';
 
         const tasksDelete = document.createElement("button");
          tasksDelete.classList.add("delete");
-         tasksDelete.innerHTML = 'x';
+         tasksDelete.innerHTML = 'X';
          tasksDelete.addEventListener('click', function() {
           item.remove();
          });
@@ -26,7 +37,10 @@ function action() {
             document.getElementById("myUl").innerHTML = "";
         } 
         
-        //this line does't work, but is here for lernig purpose
+
+
+        //this lines does't work, but is here for lernig purpose
+
         /*const tasksDelete = document.createElement ("button");
         tasksDelete.classList.add("tasksdelete");
         tasksDelete.innerHTML= 'X';

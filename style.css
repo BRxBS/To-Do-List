@@ -4,28 +4,37 @@
     background:none ;
     margin: auto;
     border: 10px ;
-    border-color: rgb(195, 69, 226);
+    border-color: #3AAFC5;
     width: 80%;
     text-align: center;
-    height: 500px;
-    border-style: groove;
+    height: 505%;
+    max-height: auto;
+    border-style: dotted;
+    padding-bottom: 60px;
     
 }
+
 
 h2{
     font-size: 50px;
 }
 
 .List{
-    background-color:  #7cdd7f;
+    background-color: #3AC596;
     font-size: 20px;
-    border-color: #7cdd7f;
+    border-color: #61D1AB;
+    margin-bottom: 40px;
     
 }
+.List::placeholder {
+    color: white;
+}
+
 
 #subButton{
-    background-color:  #4CAF50;
-    border: 2px solid #287c2a; 
+    background-color:  #21ac7e;
+    border: 2px solid #308a6c; 
+    color: white;
     cursor: pointer;
     font: 20px sans-serif;
     transition-duration: 0.4s;
@@ -33,21 +42,22 @@ h2{
 }
 
 #subButton:hover{
-    background-color: #0b680e; /* Green */
+    background-color: #318b6d; /* Green */
     color: white;
     
 }
 
 #resetBut{
-    background-color:  #4CAF50;
-    border: 2px solid #287c2a; 
+    background-color:  #21ac7e;
+    border: 2px solid #308a6c; 
+    color: white;
     cursor: pointer;
     font: 20px sans-serif;
     text-align: center;
     transition-duration: 0.4s;
 }
 #resetBut:hover{
-    background-color: #0b680e; /* Green */
+    background-color: #318b6d; /* Green */
     color: white;
 }
 
@@ -64,13 +74,15 @@ li{
     text-align: left;
     margin-left: 27%;
 }
+
 .delete{
-    background-color: #4CAF50; /* Green */
+    background-color: #3AC596; /* Green */
     border: none;
     color: white;
-    padding: 8px 14px;
+    padding: 5px 10px;
     text-align: right;
-    margin-left: 10px;
+    margin:inherit;
+    
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
@@ -79,6 +91,6 @@ li{
 
 }
 .delete:hover{
-    background-color: #0b680e; /* Green */
+    background-color: #319674; /* Green */
     color: white;
 }
